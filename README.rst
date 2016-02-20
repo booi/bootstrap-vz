@@ -96,6 +96,7 @@ VirtualBox Vagrant
 .. code:: sh
 
     user@host:~$ sudo -i # become root
+    root@host:~# modprobe nbd max_part=3
     root@host:~# git clone https://github.com/andsens/bootstrap-vz.git # Clone the repo
     root@host:~# apt-get install qemu-utils debootstrap python-pip # Install dependencies from aptitude
     root@host:~# pip install termcolor jsonschema fysom docopt pyyaml # Install python dependencies
